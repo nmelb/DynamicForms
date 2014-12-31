@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<form>
+  <field>
+    <type>Text</type>
+    <name>First Name</name>
+    <formname>FirstName</formname>
+  </field>
+  <field>
+    <type>Text</type>
+    <name>Last Name</name>
+    <formname>LastName</formname>
+  </field>
+  <field>
+    <type>Text</type>
+    <name>Occupation</name>
+    <formname>Occupation</formname>
+  </field>
+  <field>
+    <type>Checkbox</type>
+    <name>Qualified</name>
+    <formname>Qualified</formname>
+  </field>
+</form>

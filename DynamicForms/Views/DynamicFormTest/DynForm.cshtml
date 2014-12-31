@@ -1,0 +1,26 @@
+﻿@model DynamicForms.Models.Dynamic_Forms.DynamicForm
+
+
+@using (Html.BeginForm())
+{
+    // Generate fields from Model
+    foreach (var param in Model.Parameters)
+    {
+        <div>
+            <span>@param.LabelName</span>
+            <span>
+                @if (param.Type == "Text")
+                {
+                    <input type="text" name="@param.FormName" />
+                }
+                
+                @if (param.Type == "Checkbox")
+                {
+                    <input type="checkbox" name="@param.FormName" />
+                }
+            </span>
+        </div>
+    }
+    
+    <input type="submit" />
+}
